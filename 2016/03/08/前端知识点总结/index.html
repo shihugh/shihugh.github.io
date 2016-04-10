@@ -24,7 +24,7 @@ DOCTYPE意义
 
 html和xhtml区别
 HTML是一种基本的WEB网页设计语言，XHTML是一个基于XML的置标语言，看起来与HTML有些相象，只有一些小的但重要的区别，XHTML就是一个扮演着类似HTML的角色的X">
-<meta property="og:updated_time" content="2016-04-09T14:43:51.772Z">
+<meta property="og:updated_time" content="2016-04-10T01:52:26.309Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端知识点总结">
 <meta name="twitter:description" content="HTML
@@ -76,13 +76,13 @@ HTML是一种基本的WEB网页设计语言，XHTML是一个基于XML的置标�
                         <ul id="main-nav">
                             
                                 <li class="main-nav-list-item" >
-                                    <a class="main-nav-list-link" href="/">Home</a>
+                                    <a class="main-nav-list-link" href="/">Inici</a>
                                 </li>
                             
                                         <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/前端开发/">前端开发</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/前端开发/CSS/">CSS</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/生活/">生活</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/生活/随笔/">随笔</a></li></ul></li></ul>
                                     
                                 <li class="main-nav-list-item" >
-                                    <a class="main-nav-list-link" href="/about/index.html">About</a>
+                                    <a class="main-nav-list-link" href="/about/index.html">Quant a</a>
                                 </li>
                             
                         </ul>
@@ -90,7 +90,7 @@ HTML是一种基本的WEB网页设计语言，XHTML是一个基于XML的置标�
                             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Cercar" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -111,8 +111,8 @@ HTML是一种基本的WEB网页设计语言，XHTML是一个基于XML的置标�
         TRANSLATION: {
             POSTS: 'Posts',
             PAGES: 'Pages',
-            CATEGORIES: 'Categories',
-            TAGS: 'Tags',
+            CATEGORIES: 'categories',
+            TAGS: 'etiquetes',
             UNTITLED: '(Untitled)',
         },
         ROOT_URL: '/',
@@ -191,7 +191,7 @@ HTML是一种基本的WEB网页设计语言，XHTML是一个基于XML的置标�
 <li><p>img标签的title和alt分别是什么不同？</p>
 <ol>
 <li>含义不同<br>alt是当图片不存在时的替代文字<br>title是对图片的描述与进一步说明</li>
-<li>在浏览器中的表现不同<br>　　在firefox和ie8中，当鼠标经过图片时title值会显示，而alt的值不会显示;只有在ie6中，当鼠标经过图片时title和alt的值都会显示。<br>　　对于网站seo优化来说，title与alt还有最重要的一点：<br>　　搜索引擎对图片意思的判断，主要靠alt属性。所以在图片alt属性中以简要文字说明，同时包含关键词，也是页面优化的一部分。条件允许的话，可以在title属性里，进一步对图片说明。</li>
+<li>在浏览器中的表现不同<br>在firefox和ie8中，当鼠标经过图片时title值会显示，而alt的值不会显示;只有在ie6中，当鼠标经过图片时title和alt的值都会显示。<br>对于网站seo优化来说，title与alt还有最重要的一点：<br>搜索引擎对图片意思的判断，主要靠alt属性。所以在图片alt属性中以简要文字说明，同时包含关键词，也是页面优化的一部分。条件允许的话，可以在title属性里，进一步对图片说明。</li>
 </ol>
 </li>
 <li><p>理解html语义化，有什么优点？</p>
@@ -252,15 +252,15 @@ HTML是一种基本的WEB网页设计语言，XHTML是一个基于XML的置标�
 <li>父元素的高度无法被撑开，影响与父元素同级的元素；</li>
 <li>与浮动元素同级的非浮动元素会跟随其后；</li>
 <li><p>若非第一个元素浮动，则该元素之前的元素也需要浮动，否则会影响页面显示的结构。<br>使用CSS中的clear:both;属性来清除元素的浮动可解决2、3问题。<br>语法：<br>clear : none | left | right | both<br>取值：<br>none  :  默认值。允许两边都可以有浮动对象<br>left   :  不允许左边有浮动对象<br>right  :  不允许右边有浮动对象<br>both  :  不允许有浮动对象<br>注意：清除浮动时，添加clear属性只能对自己有效。如<br>对于问题1，给父元素添加clearfix样式。</p>
-<figure class="highlight plain"><figcaption><span>.clearfix:after&#123;</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">    content: &quot;&quot;;</span><br><span class="line">    display: table;</span><br><span class="line">&#125;</span><br><span class="line">.clearfix:after&#123;</span><br><span class="line">    clear: both;</span><br><span class="line">&#125;</span><br><span class="line">.clearfix&#123;</span><br><span class="line">    *zoom: 1; /* for ie 6,7*/</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">.clearfix:before, .clearfix:after&#123;</span><br><span class="line">    content: &quot;&quot;;</span><br><span class="line">    display: table;</span><br><span class="line">&#125;</span><br><span class="line">.clearfix:after&#123;</span><br><span class="line">    clear: both;</span><br><span class="line">&#125;</span><br><span class="line">.clearfix&#123;</span><br><span class="line">    *zoom: 1; /* for ie 6,7*/</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>或者：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">    overflow:hidden;</span><br><span class="line">    _zoom:1; /* for ie 6*/</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">.clearfix&#123;</span><br><span class="line">    overflow:hidden;</span><br><span class="line">    _zoom:1; /* for ie 6*/</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 </li>
 <li><p>浮动双边距、hover兼容性、margin折叠、最小高度、PNG透明</p>
 <p>IE6浮动外边距。<br>IE6及更早浏览器只支持a元素的:hover，从IE7开始支持其它元素的:hover。<br>margin折叠常规认知：<br> margin折叠只发生在块级元素上；<br> 浮动元素的margin不与任何margin发生折叠；<br> 设置了属性overflow且值不为visible的块级元素，将不与它的子元素发生margin折叠；<br> 绝对定位元素的margin不与任何margin发生折叠；<br> 根元素的margin不与其它任何margin发生折叠。<br>最小高度：</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">min-height:500px;</span><br><span class="line">_height:500px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">.div&#123;</span><br><span class="line">min-height:500px;</span><br><span class="line">_height:500px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p> 第一条min-height:500px这是针对IE7和FF的，因为IE6不支持min-height属性。而第二条是用了hack，因为_height只有IE6才认识，对IE7和FF不起作用。因为IE6里面，如果内容超出了height指定的高度,则容器会被撑大。切记不能给#obj加overflow:hidden;属性哦。</p>
 </li>
 <li><p>css hack的方式？</p>
@@ -289,10 +289,10 @@ HTML是一种基本的WEB网页设计语言，XHTML是一个基于XML的置标�
 <li>做一个图片瀑布墙</li>
 <li>用ul li做一个navbar</li>
 <li><p>设置a链接的颜色，hover颜色，取消下划线</p>
-<figure class="highlight plain"><figcaption><span>&#123; color:#555; text-decoration:none; &#125;</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a:hover &#123; text-decoration:underline; &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a &#123; color:#555; text-decoration:none; &#125;</span><br><span class="line">a:hover &#123; text-decoration:underline; &#125;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>写个双飞翼布局(另：圣杯布局不加额外的div，而是使用padding、position修正位置)<br>双飞翼布局：1、三列布局，中间宽度自适应，两边定宽； 2、中间栏要在浏览器中优先展示渲染。</p>
- <figure class="highlight plain"><figcaption><span>0;margin: 0;&#125;</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">.column&#123;float:left;&#125;</span><br><span class="line">#center&#123;width:100%;&#125;</span><br><span class="line">#center-inner&#123;</span><br><span class="line">  margin-left:300px;</span><br><span class="line">  margin-right:200px;</span><br><span class="line">&#125;</span><br><span class="line">#left&#123;</span><br><span class="line">  width:300px;</span><br><span class="line">  margin-left:-100%;</span><br><span class="line">&#125;</span><br><span class="line">#right&#123;</span><br><span class="line">  width:200px;</span><br><span class="line">  margin-left:-200px;</span><br><span class="line">&#125;</span><br><span class="line">...</span><br><span class="line">&lt;div id=&quot;container&quot;&gt;</span><br><span class="line">  &lt;div id=&quot;center&quot; class=&quot;column&quot;&gt;</span><br><span class="line">    &lt;div id=&quot;center-inner&quot;&gt;center&lt;/div&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">  &lt;div id=&quot;left&quot; class=&quot;column&quot;&gt;left&lt;/div&gt;</span><br><span class="line">  &lt;div id=&quot;right&quot; class=&quot;column&quot;&gt;right&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">*&#123;padding: 0;margin: 0;&#125;</span><br><span class="line">.column&#123;float:left;&#125;</span><br><span class="line">#center&#123;width:100%;&#125;</span><br><span class="line">#center-inner&#123;</span><br><span class="line">  margin-left:300px;</span><br><span class="line">  margin-right:200px;</span><br><span class="line">&#125;</span><br><span class="line">#left&#123;</span><br><span class="line">  width:300px;</span><br><span class="line">  margin-left:-100%;</span><br><span class="line">&#125;</span><br><span class="line">#right&#123;</span><br><span class="line">  width:200px;</span><br><span class="line">  margin-left:-200px;</span><br><span class="line">&#125;</span><br><span class="line">...</span><br><span class="line">&lt;div id=&quot;container&quot;&gt;</span><br><span class="line">  &lt;div id=&quot;center&quot; class=&quot;column&quot;&gt;</span><br><span class="line">    &lt;div id=&quot;center-inner&quot;&gt;center&lt;/div&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">  &lt;div id=&quot;left&quot; class=&quot;column&quot;&gt;left&lt;/div&gt;</span><br><span class="line">  &lt;div id=&quot;right&quot; class=&quot;column&quot;&gt;right&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 
@@ -302,7 +302,7 @@ HTML是一种基本的WEB网页设计语言，XHTML是一个基于XML的置标�
 
 
 
-    <a data-url="http://yoursite.com/2016/03/08/前端知识点总结/" data-id="cimt8idvj000024asisp57cym" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yoursite.com/2016/03/08/前端知识点总结/" data-id="cimtx10m200013sas78w6e71w" class="article-share-link"><i class="fa fa-share"></i>Compartir</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -381,7 +381,7 @@ HTML是一种基本的WEB网页设计语言，XHTML是一个基于XML的置标�
                     <aside id="sidebar">
     <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
     <div class="sidebar-top">
-        <p>follow:</p>
+        <p>seguir:</p>
         <ul class="social-links">
             
                 
@@ -440,7 +440,7 @@ HTML是一种基本的WEB网页设计语言，XHTML是一个基于XML的置标�
     
     
         <a href="/2016/03/05/舍与得/" id="article-nav-older" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">older</strong>
+        <strong class="article-nav-caption">antic</strong>
         <p class="article-nav-title">舍与得</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
@@ -531,7 +531,7 @@ HTML是一种基本的WEB网页设计语言，XHTML是一个基于XML的置标�
             
                 
     <div class="widget-wrap widget-list">
-        <h3 class="widget-title">archives</h3>
+        <h3 class="widget-title">arxius</h3>
         <div class="widget">
             <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">3</span></li></ul>
         </div>
@@ -541,7 +541,7 @@ HTML是一种基本的WEB网页设计语言，XHTML是一个基于XML的置标�
             
                 
     <div class="widget-wrap widget-list">
-        <h3 class="widget-title">tags</h3>
+        <h3 class="widget-title">etiquetes</h3>
         <div class="widget">
             <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS/">CSS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/笔试-面试/">笔试 面试</a><span class="tag-list-count">1</span></li></ul>
         </div>
@@ -551,7 +551,7 @@ HTML是一种基本的WEB网页设计语言，XHTML是一个基于XML的置标�
             
                 
     <div class="widget-wrap widget-float">
-        <h3 class="widget-title">tag cloud</h3>
+        <h3 class="widget-title">etiqueta cloud</h3>
         <div class="widget tagcloud">
             <a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/笔试-面试/" style="font-size: 10px;">笔试 面试</a>
         </div>
